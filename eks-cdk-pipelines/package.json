@@ -1,0 +1,33 @@
+{
+  "name": "cdk-pipelines-eks-example",
+  "version": "0.1.0",
+  "bin": {
+    "aws-cdk-pipelines-eks-cluster": "bin/eks-pipeline.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "license": "MIT-0",
+  "devDependencies": {
+    "@aws-cdk/assert": "1.121.0",
+    "@types/jest": "^26.0.10",
+    "aws-cdk": "2.29.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "typescript": "~4.7.4"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-eks": "1.121.0",
+    "@aws-cdk/core": "1.121.0",
+    "@aws-cdk/pipelines": "1.121.0",
+    "@types/js-yaml": "latest",
+    "cdk-dia": "^0.7.0",
+    "dotenv": "^16.0.1",
+    "js-yaml": "latest",
+    "source-map-support": "^0.5.16",
+    "sync-request": "latest"
+  }
+}

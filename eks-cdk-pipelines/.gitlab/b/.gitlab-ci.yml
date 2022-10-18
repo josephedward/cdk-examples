@@ -1,0 +1,24 @@
+stages:
+  - build
+  - test
+  - deploy
+
+image: alpine
+
+build_b:
+  stage: build
+  script:
+    - echo "This job builds something else slowly."
+    
+test_b:
+  stage: test
+  needs: [build_b]
+  script:
+    - echo "This test job will start as soon as build_b finishes."
+    - echo "It will not wait for other jobs in the build stage to finish."
+
+deploy_b:
+  stage: deploy
+  needs: [test_b]
+  script:
+    - echo "Since build_b and test_b run slowly, this deploy job will run much later."

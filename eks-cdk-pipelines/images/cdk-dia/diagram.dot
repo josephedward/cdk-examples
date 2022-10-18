@@ -1,0 +1,1061 @@
+digraph "Diagram" {
+  splines = "ortho";
+  pad = "1.0";
+  nodesep = "0.60";
+  ranksep = "0.75";
+  fontname = "Sans-Serif";
+  fontsize = "15";
+  dpi = "200";
+  rankdir = "BT";
+  compound = "true";
+  fontcolor = "#222222";
+  edge [
+    color = "#D5871488",
+    penwidth = 2,
+    arrowhead = "dot",
+    arrowtail = "dot",
+  ];
+  node [
+    shape = "box",
+    style = "rounded",
+    fixedsize = true,
+    width = 1.7,
+    height = 1.7,
+    labelloc = "c",
+    imagescale = true,
+    fontname = "Sans-Serif",
+    fontsize = 8,
+    margin = 8,
+  ];
+  subgraph "EksPipelineStack" {
+    subgraph "cluster-SubGraph.EksPipelineStack" {
+      graph [
+        label = "EksPipelineStack",
+        labelloc = "b",
+        labeljust = "l",
+        margin = "10",
+        fontsize = "16",
+        penwidth = "2",
+        pencolor = "#888888",
+        style = "filled,rounded",
+        fillcolor = "#e4e4e4",
+      ];
+      subgraph "cluster-SubGraph.Pipeline" {
+        graph [
+          label = "Pipeline",
+          labelloc = "b",
+          labeljust = "l",
+          margin = "10",
+          fontsize = "16",
+          penwidth = "2",
+          pencolor = "#888888",
+          style = "filled,rounded",
+          fillcolor = "#d6d6d6",
+        ];
+        "EksPipelineStack/Pipeline/Pipeline" [
+          label = " Pipeline",
+          fontsize = 12,
+          image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_AWS-CodePipeline_64@5x.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 1.2,
+          height = 1.466,
+        ];
+        "EksPipelineStack/Pipeline/UpdatePipeline/SelfMutation" [
+          label = " SelfMutation",
+          fontsize = 12,
+          image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+          imagescale = "true",
+          imagepos = "tc",
+          penwidth = "0",
+          shape = "node",
+          fixedsize = "true",
+          labelloc = "b",
+          width = 1.2,
+          height = 1.466,
+        ];
+        subgraph "cluster-SubGraph.Assets" {
+          graph [
+            label = "Assets",
+            labelloc = "b",
+            labeljust = "l",
+            margin = "10",
+            fontsize = "16",
+            penwidth = "2",
+            pencolor = "#888888",
+            style = "filled,rounded",
+            fillcolor = "#c7c7c7",
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileRole" [
+            label = " FileRole",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset1" [
+            label = " FileAsset1",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset10" [
+            label = " FileAsset10",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset11" [
+            label = " FileAsset11",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset2" [
+            label = " FileAsset2",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset3" [
+            label = " FileAsset3",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset4" [
+            label = " FileAsset4",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset5" [
+            label = " FileAsset5",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset6" [
+            label = " FileAsset6",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset7" [
+            label = " FileAsset7",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset8" [
+            label = " FileAsset8",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/Pipeline/Assets/FileAsset9" [
+            label = " FileAsset9",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Developer- Tools/64/Arch_Amazon-CodeBuild_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+        }
+      }
+      subgraph "cluster-SubGraph.EKSClusterA" {
+        graph [
+          label = "EKSClusterA",
+          labelloc = "b",
+          labeljust = "l",
+          margin = "10",
+          fontsize = "16",
+          penwidth = "2",
+          pencolor = "#888888",
+          style = "filled,rounded",
+          fillcolor = "#d6d6d6",
+        ];
+        subgraph "cluster-SubGraph.EKSCluster" {
+          graph [
+            label = "EKSCluster",
+            labelloc = "b",
+            labeljust = "l",
+            margin = "10",
+            fontsize = "16",
+            penwidth = "2",
+            pencolor = "#888888",
+            style = "filled,rounded",
+            fillcolor = "#c7c7c7",
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/Vpc" [
+            label = " Vpc",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Networking-Content/64/Arch_Amazon-Virtual-Private-Cloud_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 2,
+            height = 2.266,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" [
+            label = " acme-blue",
+            fontsize = 12,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/awsNodeOIDCCondition" [
+            label = " awsNodeOIDCCondition",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/awsNodeIamRole" [
+            label = " awsNodeIamRole",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/serviceAccount--aws-node" [
+            label = " serviceAccount  aws\nnode",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.682,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource" [
+            label = " CloudFormation Stack",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource" [
+            label = " CloudFormation Stack",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterA/EKSCluster/AWSLoadBalancerController/AWSLoadBalancerControllerIAMPolicy" [
+            label = "\nAWSLoadBalancerContro",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.682,
+          ];
+          subgraph "cluster-SubGraph.@aws-cdk--aws-eks.ClusterResourceProvider" {
+            graph [
+              label = "@aws-cdk--aws-eks.ClusterResourceProvider",
+              labelloc = "b",
+              labeljust = "l",
+              margin = "10",
+              fontsize = "16",
+              penwidth = "2",
+              pencolor = "#888888",
+              style = "filled,rounded",
+              fillcolor = "#b9b9b9",
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler" [
+              label = " OnEventHandler",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler" [
+              label = " IsCompleteHandler",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            subgraph "cluster-SubGraph.Provider" {
+              graph [
+                label = "Provider",
+                labelloc = "b",
+                labeljust = "l",
+                margin = "10",
+                fontsize = "16",
+                penwidth = "2",
+                pencolor = "#888888",
+                style = "filled,rounded",
+                fillcolor = "#aaaaaa",
+              ];
+              "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent" [
+                label = " framework-onEvent",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 2,
+                height = 2.266,
+              ];
+              "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete" [
+                label = " framework-isComplete",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 2,
+                height = 2.266,
+              ];
+              "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout" [
+                label = " framework-onTimeout",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 2,
+                height = 2.266,
+              ];
+              "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role" [
+                label = " Role",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 1.2,
+                height = 1.466,
+              ];
+            }
+          }
+          subgraph "cluster-SubGraph.@aws-cdk--aws-eks.KubectlProvider" {
+            graph [
+              label = "@aws-cdk--aws-eks.KubectlProvider",
+              labelloc = "b",
+              labeljust = "l",
+              margin = "10",
+              fontsize = "16",
+              penwidth = "2",
+              pencolor = "#888888",
+              style = "filled,rounded",
+              fillcolor = "#b9b9b9",
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Handler" [
+              label = " Handler",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/AwsCliLayer" [
+              label = " AwsCliLayer",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/KubectlLayer" [
+              label = " KubectlLayer",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent" [
+              label = " framework-onEvent",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+          }
+          subgraph "cluster-SubGraph.EksManagedNodeGroup" {
+            graph [
+              label = "EksManagedNodeGroup",
+              labelloc = "b",
+              labeljust = "l",
+              margin = "10",
+              fontsize = "16",
+              penwidth = "2",
+              pencolor = "#888888",
+              style = "filled,rounded",
+              fillcolor = "#b9b9b9",
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/EksManagedNodeGroup/SSMLaunchTemplate" [
+              label = " EC2 LaunchTemplate\nSSMLaunchTemplate",
+              fontsize = 12,
+            ];
+            "EksPipelineStack/EKSClusterA/EKSCluster/EksManagedNodeGroup/EksNodeRole" [
+              label = " EksNodeRole",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 1.2,
+              height = 1.466,
+            ];
+          }
+        }
+      }
+      subgraph "cluster-SubGraph.EKSClusterB" {
+        graph [
+          label = "EKSClusterB",
+          labelloc = "b",
+          labeljust = "l",
+          margin = "10",
+          fontsize = "16",
+          penwidth = "2",
+          pencolor = "#888888",
+          style = "filled,rounded",
+          fillcolor = "#d6d6d6",
+        ];
+        subgraph "cluster-SubGraph.EKSCluster" {
+          graph [
+            label = "EKSCluster",
+            labelloc = "b",
+            labeljust = "l",
+            margin = "10",
+            fontsize = "16",
+            penwidth = "2",
+            pencolor = "#888888",
+            style = "filled,rounded",
+            fillcolor = "#c7c7c7",
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/Vpc" [
+            label = " Vpc",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Networking-Content/64/Arch_Amazon-Virtual-Private-Cloud_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 2,
+            height = 2.266,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" [
+            label = " acme-green",
+            fontsize = 12,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/awsNodeOIDCCondition" [
+            label = " awsNodeOIDCCondition",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/awsNodeIamRole" [
+            label = " awsNodeIamRole",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/serviceAccount--aws-node" [
+            label = " serviceAccount  aws\nnode",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.682,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource" [
+            label = " CloudFormation Stack",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource" [
+            label = " CloudFormation Stack",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Management-Governance/64/Arch_AWS-CloudFormation_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+          "EksPipelineStack/EKSClusterB/EKSCluster/AWSLoadBalancerController/AWSLoadBalancerControllerIAMPolicy" [
+            label = "\nAWSLoadBalancerContro",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.682,
+          ];
+          subgraph "cluster-SubGraph.@aws-cdk--aws-eks.ClusterResourceProvider" {
+            graph [
+              label = "@aws-cdk--aws-eks.ClusterResourceProvider",
+              labelloc = "b",
+              labeljust = "l",
+              margin = "10",
+              fontsize = "16",
+              penwidth = "2",
+              pencolor = "#888888",
+              style = "filled,rounded",
+              fillcolor = "#b9b9b9",
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/OnEventHandler" [
+              label = " OnEventHandler",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/IsCompleteHandler" [
+              label = " IsCompleteHandler",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            subgraph "cluster-SubGraph.Provider" {
+              graph [
+                label = "Provider",
+                labelloc = "b",
+                labeljust = "l",
+                margin = "10",
+                fontsize = "16",
+                penwidth = "2",
+                pencolor = "#888888",
+                style = "filled,rounded",
+                fillcolor = "#aaaaaa",
+              ];
+              "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onEvent" [
+                label = " framework-onEvent",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 2,
+                height = 2.266,
+              ];
+              "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-isComplete" [
+                label = " framework-isComplete",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 2,
+                height = 2.266,
+              ];
+              "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/framework-onTimeout" [
+                label = " framework-onTimeout",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 2,
+                height = 2.266,
+              ];
+              "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider/Provider/waiter-state-machine/Role" [
+                label = " Role",
+                fontsize = 12,
+                image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+                imagescale = "true",
+                imagepos = "tc",
+                penwidth = "0",
+                shape = "node",
+                fixedsize = "true",
+                labelloc = "b",
+                width = 1.2,
+                height = 1.466,
+              ];
+            }
+          }
+          subgraph "cluster-SubGraph.@aws-cdk--aws-eks.KubectlProvider" {
+            graph [
+              label = "@aws-cdk--aws-eks.KubectlProvider",
+              labelloc = "b",
+              labeljust = "l",
+              margin = "10",
+              fontsize = "16",
+              penwidth = "2",
+              pencolor = "#888888",
+              style = "filled,rounded",
+              fillcolor = "#b9b9b9",
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Handler" [
+              label = " Handler",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/AwsCliLayer" [
+              label = " AwsCliLayer",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/KubectlLayer" [
+              label = " KubectlLayer",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider/Provider/framework-onEvent" [
+              label = " framework-onEvent",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Compute/64/Arch_AWS-Lambda_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 2,
+              height = 2.266,
+            ];
+          }
+          subgraph "cluster-SubGraph.EksManagedNodeGroup" {
+            graph [
+              label = "EksManagedNodeGroup",
+              labelloc = "b",
+              labeljust = "l",
+              margin = "10",
+              fontsize = "16",
+              penwidth = "2",
+              pencolor = "#888888",
+              style = "filled,rounded",
+              fillcolor = "#b9b9b9",
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/EksManagedNodeGroup/SSMLaunchTemplate" [
+              label = " EC2 LaunchTemplate\nSSMLaunchTemplate",
+              fontsize = 12,
+            ];
+            "EksPipelineStack/EKSClusterB/EKSCluster/EksManagedNodeGroup/EksNodeRole" [
+              label = " EksNodeRole",
+              fontsize = 12,
+              image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Service/Arch_Security-Identity-Compliance/64/Arch_AWS-Identity-and-Access-Management_64@5x.png",
+              imagescale = "true",
+              imagepos = "tc",
+              penwidth = "0",
+              shape = "node",
+              fixedsize = "true",
+              labelloc = "b",
+              width = 1.2,
+              height = 1.466,
+            ];
+          }
+        }
+      }
+      subgraph "cluster-SubGraph.UpdateDNS" {
+        graph [
+          label = "UpdateDNS",
+          labelloc = "b",
+          labeljust = "l",
+          margin = "10",
+          fontsize = "16",
+          penwidth = "2",
+          pencolor = "#888888",
+          style = "filled,rounded",
+          fillcolor = "#d6d6d6",
+        ];
+        subgraph "cluster-SubGraph.AppDns" {
+          graph [
+            label = "AppDns",
+            labelloc = "b",
+            labeljust = "l",
+            margin = "10",
+            fontsize = "16",
+            penwidth = "2",
+            pencolor = "#888888",
+            style = "filled,rounded",
+            fillcolor = "#c7c7c7",
+          ];
+          "EksPipelineStack/UpdateDNS/AppDns/appCnameRecord" [
+            label = " appCnameRecord",
+            fontsize = 12,
+            image = "/Users/user1/Documents/GitHub/eks-cdk-pipelines/node_modules/cdk-dia/icons/aws/Resource/Res_Networking-and-Content-Delivery/Res_48_Dark/Res_Amazon-Route-53-Hosted-Zone_48_Dark_gen.png",
+            imagescale = "true",
+            imagepos = "tc",
+            penwidth = "0",
+            shape = "node",
+            fixedsize = "true",
+            labelloc = "b",
+            width = 1.2,
+            height = 1.466,
+          ];
+        }
+      }
+    }
+  }
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/UpdatePipeline/SelfMutation" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset1" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset10" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset11" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset2" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset3" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset4" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset5" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset6" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset7" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset8" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Pipeline" -> "EksPipelineStack/Pipeline/Assets/FileAsset9" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileRole" -> "EksPipelineStack/Pipeline/Pipeline" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset1" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset10" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset11" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset2" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset3" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset4" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset5" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset6" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset7" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset8" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/Assets/FileAsset9" -> "EksPipelineStack/Pipeline/Assets/FileRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/Pipeline/UpdatePipeline/SelfMutation" -> "EksPipelineStack/Pipeline/Pipeline" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" -> "EksPipelineStack/EKSClusterA/EKSCluster/Vpc" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" -> "EksPipelineStack/EKSClusterA/EKSCluster/EksManagedNodeGroup/SSMLaunchTemplate" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" -> "EksPipelineStack/EKSClusterA/EKSCluster/EksManagedNodeGroup/EksNodeRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" -> "EksPipelineStack/EKSClusterA/EKSCluster/AWSLoadBalancerController/AWSLoadBalancerControllerIAMPolicy" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/awsNodeIamRole" -> "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/awsNodeIamRole" -> "EksPipelineStack/EKSClusterA/EKSCluster/awsNodeOIDCCondition" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource" -> "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource" -> "EksPipelineStack/EKSClusterA/EKSCluster/Vpc" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterA/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource" -> "EksPipelineStack/EKSClusterA/EKSCluster/acme-blue" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" -> "EksPipelineStack/EKSClusterB/EKSCluster/Vpc" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" -> "EksPipelineStack/EKSClusterB/EKSCluster/EksManagedNodeGroup/SSMLaunchTemplate" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" -> "EksPipelineStack/EKSClusterB/EKSCluster/EksManagedNodeGroup/EksNodeRole" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" -> "EksPipelineStack/EKSClusterB/EKSCluster/AWSLoadBalancerController/AWSLoadBalancerControllerIAMPolicy" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/awsNodeIamRole" -> "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/awsNodeIamRole" -> "EksPipelineStack/EKSClusterB/EKSCluster/awsNodeOIDCCondition" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStack/@aws-cdk--aws-eks.ClusterResourceProvider.NestedStackResource" -> "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource" -> "EksPipelineStack/EKSClusterB/EKSCluster/Vpc" [
+    dir = "both",
+  ];
+  "EksPipelineStack/EKSClusterB/EKSCluster/@aws-cdk--aws-eks.KubectlProvider.NestedStack/@aws-cdk--aws-eks.KubectlProvider.NestedStackResource" -> "EksPipelineStack/EKSClusterB/EKSCluster/acme-green" [
+    dir = "both",
+  ];
+}
